@@ -7,6 +7,7 @@
 
 // Front end functions
 require_once('inc/front/cleanUp.php');
+require_once('inc/front/fixImages.php');
 
 // Back end functions
 require_once('inc/back/supports.php');
