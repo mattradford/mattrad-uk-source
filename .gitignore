@@ -114,6 +114,6 @@ Thumbs.db
 # !wp-content/mu-plugins/example-mu-plugin/
 # !wp-content/plugins/example-plugin/
 !wp-content/themes/negligible/
-!wp-content/uploads/cyber/
-!wp-content/uploads/hci/
-!wp-content/uploads/ozdiary/
+#!wp-content/uploads/cyber/
+#!wp-content/uploads/hci/
+#!wp-content/uploads/ozdiary/
