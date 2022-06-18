@@ -1,0 +1,24 @@
+{
+	"name": "mattradford/mattrad-uk-source",
+    "description": "WordPress stack for mattrad.uk",
+    "type": "library",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Matt Radford",
+            "email": "matt@pressgrow.uk"
+        }
+    ],
+	"repositories":[
+		{
+			"type":"composer",
+			"url":"https://wpackagist.org"
+		}
+	],
+	"require": {
+		"wpackagist-plugin/wayfinder":"*",
+		"wpackagist-plugin/wordpress-seo":"*",
+		"wpackagist-plugin/simply-static":"*",
+		"bueltge/remove-comments-absolutely": "^1.5"
+	}
+}

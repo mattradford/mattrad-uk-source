@@ -59,16 +59,6 @@ function mr_dequeue_block_library_css(){
 add_action( 'wp_enqueue_scripts', 'mr_dequeue_block_library_css', 100 );
 
 /**
- * Dequeue Page Links To script.
- */
-function mr_dequeue_page_links_js() {
-    if (!is_admin()) {
-        wp_dequeue_script('page-links-to');
-    }
-}
-add_action('wp_enqueue_scripts', 'mr_dequeue_page_links_js', 100);
-
-/**
  * Remove duotone SVGs after <body>
  */
 function mr_remove_global_styles() {
@@ -107,12 +97,12 @@ function mr_disable_embeds_code_init() {
     remove_action( 'wp_head', 'wp_oembed_add_host_js' );
 
     // Remove all embeds rewrite rules.
-    add_filter( 'rewrite_rules_array', 'disable_embeds_rewrites' );
+    // add_filter( 'rewrite_rules_array', 'disable_embeds_rewrites' );
 
     // Remove filter of the oEmbed result before any HTTP requests are made.
     remove_filter( 'pre_oembed_result', 'wp_filter_pre_oembed_result', 10 );
 }
-add_action( 'init', 'mr_disable_embeds_code_init', 9999 );
+// add_action( 'init', 'mr_disable_embeds_code_init', 9999 );
 
 /**
  * Remove oEmbed rewrites
@@ -145,3 +135,4 @@ function mr_remove_category_sitemap( $taxonomies ) {
     return $taxonomies;
 }
 add_filter( 'wp_sitemaps_taxonomies', 'mr_remove_category_sitemap', 10, 1);
+
